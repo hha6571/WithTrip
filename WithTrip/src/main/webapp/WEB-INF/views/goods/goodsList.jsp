@@ -412,20 +412,6 @@ transition: all 0.6s ease-in-out;
 		 	  		<input type="button" id="goodsAll" class="saleGList" value="품절 상품 포함" onclick="location.href='glist.go'">
 	 	  		</c:if>					
  	 		 </div>
- 	 		 	
-<!-- 			<div> -->
-<!-- 				<p class="count"> -->
-<%-- 				   <span class="inner_count">총 ${ listCount }개</span> --%>
-<!-- 				</p> -->
-<!-- 				<div class="select_type"> -->
-<!-- 				   <a class="name_select" id="new" onclick="getList();">신상품순</a> -->
-<!-- 				   <a class="name_select" id="sale" onclick="getList();">판매량순</a> -->
-<!-- 				   <a class="name_select" id="low" onclick="getList();">낮은 가격순</a> -->
-<!-- 				   <a class="name_select" id="high" onclick="getList();">높은 가격순</a> -->
-<!-- 				   <a class="name_select" id="review">후기 많은 순</a> -->
-<!-- 				</div> -->
-<!-- 			</div>	 	  			 -->
-<!--  	  		</div> -->
    	  </div>
   	  
  	 <div>
@@ -439,7 +425,6 @@ transition: all 0.6s ease-in-out;
 	         <div class="row2">
 	         
 	            <!-- 리스트 1 -->
-	<%--             <c:forEach var="g" items="${ gList }">       --%>
 	            <c:forEach var="i" begin="0" end="${ gList.size()-1 }">  
 	                  <div class="goods-list">
 	                     

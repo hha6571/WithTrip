@@ -5,7 +5,7 @@
   <!-- 글 작성 -->
   <insert id="insertGoods">
      insert into goods
-     values(seq_gid.nextval, #{goodsName}, #{price}, #{stock}, #{gcateNo}, #{gContent}, DEFAULT, #{goodsBrand}, #{goodsSize}, #{goodsColor})
+     values(seq_gid.nextval, #{goodsName}, #{price}, #{stock}, #{gcateNo}, DEFAULT, #{gContent},#{goodsBrand}, #{goodsSize}, #{goodsColor})
   </insert>
   
   <!-- 사진 첨부 -->

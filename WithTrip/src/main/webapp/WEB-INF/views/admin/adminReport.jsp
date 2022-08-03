@@ -443,9 +443,9 @@ function toClose(){
 <script>
 todayOpen('popupbox');
 // 창열기  
-function todayOpen(winName) {
-  var blnCookie = getCookie(winName);
-  var obj = eval("window." + winName);
+function todayOpen(winNameSecond) {
+  var blnCookie = getCookie(winNameSecond);
+  var obj = eval("window." + winNameSecond);
   console.log(blnCookie);
   if (!blnCookie) {
     obj.style.display = "block";
@@ -454,9 +454,9 @@ function todayOpen(winName) {
   }
 }
 
-function todayClose(winName, expiredays) {
-	  setCookie(winName, "expire", expiredays);
-	  var obj = eval("window." + winName);
+function todayClose(winNameSecond, expiredays) {
+	  setCookie(winNameSecond, "expire", expiredays);
+	  var obj = eval("window." + winNameSecond);
 	  obj.style.display = "none";
 	}
 	// 쿠키 가져오기  
